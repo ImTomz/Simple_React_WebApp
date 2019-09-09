@@ -1,0 +1,57 @@
+@media (max-width: 768px) {
+  nav {
+    padding: 0;
+  }
+
+  .bar {
+    position: absolute;
+    top: 10vh;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.938);
+    padding: 0;
+  }
+
+  .navbar-links {
+    height: 10vh;
+    width: 100%;
+  }
+
+  .hamburger,
+  .logo {
+    z-index: 1000;
+    padding: 0 5%;
+  }
+  .title {
+    width: 80%;
+  }
+  .title h1 {
+    font-size: 35px;
+  }
+  .title p {
+    font-size: 26px;
+  }
+  .about-cnt p {
+    text-align: center;
+    margin-left: none;
+    font-size: 16px;
+  }
+  .contact.info {
+    width: 380px;
+  }
+  .img-container img {
+    width: 280px;
+  }
+  .titles-img-container {
+    width: 300px;
+  }
+}
+@media (max-width: 415px) {
+  .titles-img-container {
+    width: 280px;
+  }
+}
+@media (max-width: 320px) {
+  .move-arrow {
+    padding-top: 3vh;
+  }
+}

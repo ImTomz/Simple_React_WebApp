@@ -1,0 +1,82 @@
+// Navbar
+nav {
+  height: 10vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 5%;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.938);
+  z-index: 1000;
+
+  & h1 {
+    font-size: 30px;
+  }
+  & a {
+    color: #383838;
+    text-decoration: none;
+  }
+  & ul a {
+    color: #383838;
+    text-decoration: none;
+  }
+
+  & ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    width: 40%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+  }
+
+  & .hamburger {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    cursor: pointer;
+
+    & #one,
+    & #two,
+    & #three {
+      width: 35px;
+      height: 6px;
+      margin-top: 2px;
+      background-color: #383838;
+    }
+    & #two {
+      width: 25px;
+      transition: width;
+      transition-duration: 300ms;
+    }
+    & #three {
+      width: 15px;
+      transition: width;
+      transition-duration: 300ms;
+    }
+  }
+}
+.hamburger:hover {
+  #two {
+    width: 35px;
+  }
+  #three {
+    width: 35px;
+  }
+}
+
+.navbar-links {
+  width: 500px;
+  display: flex;
+  justify-content: space-around;
+}
+
+#line {
+  width: 2px;
+  height: 50%;
+  background-color: #383838;
+}
